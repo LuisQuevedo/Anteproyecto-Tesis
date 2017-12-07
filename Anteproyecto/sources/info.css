@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-image: url("../img/fondo5.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: white;
+}
+html body {
+  margin: 0 auto;
+  margin-top: 0;
+  background-color:#d8d8d8;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding: 0 10px 10px 10px;
+}
+.dropmenu {
+  font-family: 'Permanent Marker', cursive;
+  text-align: right;
+  font-size: 0;
+  z-index: 1;
+}
+.dropmenu a {
+  background: #fffff9;
+  margin: 0;
+}
+.dropmenu .sidenav {
+  transition: 0.5s ease;
+  position: absolute;
+  z-index: 2;
+}
+.dropmenu .sidenav li {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  max-width: 150px;
+  z-index: 1;
+  text-align: center;
+}
+.dropmenu .sidenav li a {
+  position: relative;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  color: #00b7ff;
+}
+.dropmenu .sidenav li a.active {
+  background: #00b7ff;
+  color: #fff;
+}
+.dropmenu .sidenav li a:hover {
+  color: #fffff9;
+  background: #33c5ff;
+  text-shadow: #00b7ff 1px 1px 4px;
+}
+.dropmenu .sidenav li.menu {
+  position: relative;
+}
+.dropmenu .sidenav li.menu span {
+  position: absolute;
+  font-size: 14px;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+}
+.dropmenu .sidenav li.menu span > a {
+  display: block;
+  font-size: 0;
+  padding: 0;
+}
+.dropmenu .sidenav li.menu:hover span a {
+  padding: 10px 0;
+  font-size: 14px;
+}
+@media (min-width: 600px) {
+  .dropmenu .sidenav {
+    top: 50px;
+    transition: 0s ease;
+    width: 100%;
+    position: initial;
+  }
+  .dropmenu .sidenav a {
+    display: inline-block;
+  }
+}
+input[type=number]::-webkit-inner-spin-button {
+  height: 50px;
+  opacity: 1;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #171717;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #00b7ff;
+}
